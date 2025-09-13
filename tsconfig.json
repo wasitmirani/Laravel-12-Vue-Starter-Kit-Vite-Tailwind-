@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    // this enables stricter inference for data properties on `this`
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": ["./*"],
+      // "@layouts/*": ["./resources/ts/vue/backend/layouts/*"],
+      // "@services/*": ["./resources/ts/vue/backend/services/*"],
+    }
+  },
+  "include": ["./resources/ts/**/*", "tailwind.config.js"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
