@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",function(){const t=document.querySelectorAll(".nft-tag");t.forEach(e=>{e.addEventListener("click",function(){t.forEach(n=>n.classList.remove("active")),this.classList.add("active")})})});

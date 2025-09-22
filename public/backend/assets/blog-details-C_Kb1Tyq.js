@@ -1,1 +1,0 @@
-(function(){var e=document.getElementById("blog-details-comment-list");new SimpleBar(e,{autoHide:!0});var o=GLightbox({selector:".glightbox"});o.on("slide_changed",({prev:l,current:t})=>{console.log("Prev slide",l),console.log("Current slide",t)})})();
