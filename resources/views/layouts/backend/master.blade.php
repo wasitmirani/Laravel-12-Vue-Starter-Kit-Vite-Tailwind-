@@ -1,52 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="transparent" data-width="fullwidth" data-menu-styles="transparent" data-page-style="flat" data-toggled="close"  data-vertical-style="doublemenu" data-toggled="double-menu-open">
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="transparent" data-width="fullwidth" data-menu-styles="transparent" data-page-style="flat" data-toggled="close"  data-vertical-style="default" data-toggled="double-menu-open">
 <head>
 
     <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Vyzor - Bootstrap 5 Premium Admin & Dashboard Template </title>
+    <title>  - {{ config('app.name') }} </title>
     <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
     <meta name="Author" content="Spruko Technologies Private Limited">
 	<meta name="keywords" content="admin dashboard html,admin html template,admin panel bootstrap template,admin panel html template,admin template html,bootstrap admin panel,bootstrap html template,bootstrap template,bootstrap with html,dashboard html template,dashboards ui,html admin dashboard,html bootstrap,html dashboard template,html template">
     
     <!-- Favicon -->
-    <link rel="icon" href="https://sprukomarket.com/products/html/bootstrap/vyzor/dist/assets/images/brand-logos/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{asset('/backend/assets/images/brand-logos/favicon.ico')}}" type="image/x-icon">
     
     <!-- Choices JS -->
-    <script src="../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="{{asset('/backend/assets/libs/choices.js/public/assets/scripts/choices.min.js')}}"></script>
 
     <!-- Main Theme Js -->
-    <script src="../assets/js/main.js"></script>
+    <script src="{{asset('/backend/assets/js/main.js')}}"></script>
     
     <!-- Bootstrap Css -->
-    <link id="style" href="../assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+    <link id="style" href="{{asset('/backend/assets/libs/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" >
 
     <!-- Style Css -->
-    <link href="../assets/css/styles.css" rel="stylesheet" >
+    <link href="{{asset('/backend/assets/css/styles.css')}}" rel="stylesheet" >
 
     <!-- Icons Css -->
-    <link href="../assets/css/icons.css" rel="stylesheet" >
+    <link href="{{asset('/backend/assets/css/icons.css')}}" rel="stylesheet" >
 
     <!-- Node Waves Css -->
-    <link href="../assets/libs/node-waves/waves.min.css" rel="stylesheet" > 
+    <link href="{{asset('/backend/assets/libs/node-waves/waves.min.css')}}" rel="stylesheet" >
 
     <!-- Simplebar Css -->
-    <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet" >
-    
+    <link href="{{asset('/backend/assets/libs/simplebar/simplebar.min.css')}}" rel="stylesheet" >
+
     <!-- Color Picker Css -->
-    <link rel="stylesheet" href="../assets/libs/flatpickr/flatpickr.min.css">
-    <link rel="stylesheet" href="../assets/libs/%40simonwep/pickr/themes/nano.min.css">
+    <link rel="stylesheet" href="{{asset('/backend/assets/libs/flatpickr/flatpickr.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/backend/assets/libs/%40simonwep/pickr/themes/nano.min.css')}}">
 
     <!-- Choices Css -->
-    <link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="{{asset('/backend/assets/libs/choices.js/public/assets/styles/choices.min.css')}}">
 
     <!-- FlatPickr CSS -->
-    <link rel="stylesheet" href="../assets/libs/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="{{asset('/backend/assets/libs/flatpickr/flatpickr.min.css')}}">
 
     <!-- Auto Complete CSS -->
-    <link rel="stylesheet" href="../assets/libs/%40tarekraafat/autocomplete.js/css/autoComplete.css">
+    <link rel="stylesheet" href="{{asset('/backend/assets/libs/%40tarekraafat/autocomplete.js/css/autoComplete.css')}}">
 
 
 </head>
@@ -514,35 +514,35 @@
                                 <input class="form-check-input bgimage-input bg-img1" type="radio"
                                     name="menu-background" id="switcher-bg-img">
                                 <div class="bg-img-container">
-                                    <img src="../assets/images/menu-bg-images/bg-img1.jpg" alt="">
+                                    <img src="{{asset('/backend/assets/images/menu-bg-images/bg-img1.jpg')}}" alt="">
                                 </div>
                             </div>
                             <div class="form-check switch-select menu-img-select m-2">
                                 <input class="form-check-input bgimage-input bg-img2" type="radio"
                                     name="menu-background" id="switcher-bg-img1">
                                 <div class="bg-img-container">
-                                    <img src="../assets/images/menu-bg-images/bg-img2.jpg" alt="">
+                                    <img src="/backend/assets/images/menu-bg-images/bg-img2.jpg" alt="">
                                 </div>
                             </div>
                             <div class="form-check switch-select menu-img-select m-2">
                                 <input class="form-check-input bgimage-input bg-img3" type="radio" name="menu-background"
                                     id="switcher-bg-img2">
                                 <div class="bg-img-container">
-                                    <img src="../assets/images/menu-bg-images/bg-img3.jpg" alt="">
+                                    <img src="/backend/assets/images/menu-bg-images/bg-img3.jpg" alt="">
                                 </div>
                             </div>
                             <div class="form-check switch-select menu-img-select m-2">
                                 <input class="form-check-input bgimage-input bg-img4" type="radio"
                                     name="menu-background" id="switcher-bg-img3">
                                 <div class="bg-img-container">
-                                    <img src="../assets/images/menu-bg-images/bg-img4.jpg" alt="">
+                                    <img src="/backend/assets/images/menu-bg-images/bg-img4.jpg" alt="">
                                 </div>
                             </div>
                             <div class="form-check switch-select menu-img-select m-2">
                                 <input class="form-check-input bgimage-input bg-img5" type="radio"
                                     name="menu-background" id="switcher-bg-img4">
                                 <div class="bg-img-container">
-                                    <img src="../assets/images/menu-bg-images/bg-img5.jpg" alt="">
+                                    <img src="/backend/assets/images/menu-bg-images/bg-img5.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -561,11 +561,13 @@
 
     <!-- Loader -->
 <div id="loader" >
-    <img src="/assets/images/media/loader.svg" alt="">
+    <img src="{{asset('/backend/assets/images/media/loader.svg')}}" alt="">
 </div>
 <!-- Loader -->
         
         <!-- PAGE -->
+        
+    <div class="page">
         <div id="app">
         
 
@@ -573,64 +575,93 @@
 
 
         </div>
+        </div>
   
         <!-- END PAGE-->
 
         <!-- SCRIPTS -->
-
-        <!-- SCROLL-TO-TOP -->
+        <!-- Scroll To Top -->
         <div class="scrollToTop">
-                <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span>
+            <span class="arrow lh-1"><i class="ti ti-arrow-big-up fs-18"></i></span>
         </div>
         <div id="responsive-overlay"></div>
+        <!-- Scroll To Top -->
 
-        <!-- POPPER JS -->
-        <script src="{{asset('backend/assets/libs/@popperjs/core/umd/popper.min.js')}}"></script>
-
-        <!-- BOOTSTRAP JS -->
-        <script src="{{asset('backend/assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-        @vite(['resources/ts/backend/app.ts', 'resources/css/app.css'])
-
-
-        <!-- NODE WAVES JS -->
-        <script src="{{asset('backend/assets/libs/node-waves/waves.min.js')}}"></script>
 
         <!-- SIMPLEBAR JS -->
-        <script src="{{asset('backend/assets/libs/simplebar/simplebar.min.js')}}"></script>
-
-        <script  src="{{asset('backend/assets/simplebar.js')}}"></script>
-
-        <!-- PICKER JS -->
-        <script src="{{asset('backend/assets/libs/flatpickr/flatpickr.min.js')}}"></script>
-        <script src="{{asset('backend/assets/libs/%40simonwep/pickr/pickr.es5.min.js')}}"></script>
-
-        <!-- AUTO COMPLETE JS -->
-        <script src="{{asset('backend/assets/libs/@tarekraafat/autocomplete.js/autoComplete.min.js')}}"></script>
-
-
-        <!-- Apex Charts JS -->
-        <script src="{{asset('backend/assets/libs/apexcharts/apexcharts.min.js')}}"></script>
-
-        <!-- Ecommerce-Dashboard JS -->
-
-        <script  src="{{asset('backend/assets/ecommerce-dashboard-Diz2IHgQ.js')}}"></script>
-
-
-        <!-- STICKY JS -->
-        <script src="{{asset('backend/assets/sticky.js')}}"></script>
-
-        <!-- APP JS -->
-    <script  src="{{asset('backend/assets/app-Cnpnysuk.js')}}"></script>
-
-        <!-- CUSTOM-SWITCHER JS -->
-      <script  src="{{asset('backend/assets/custom-switcher-BX4z_p9X.js')}}"></script>
-
-        <!-- END SCRIPTS -->
-          <!-- Toast JS -->
-          <link rel="modulepreload" href="{{asset('backend/assets/toasts-CLr2vkjC.js')}}" />
-          <script type="module" src="{{asset('backend/assets/toasts-CLr2vkjC.js')}}"></script>
+        
         
 
+<script src="{{asset('/backend/assets/libs/@popperjs/core/umd/popper.min.js')}}"></script>
+
+<!-- Bootstrap JS -->
+<script src="{{asset('/backend/assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+ @vite(['resources/ts/backend/app.ts', 'resources/css/app.css'])
+<script>
+    function loadScript(src) {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                const s = document.createElement('script');
+                s.src = src;
+                s.onload = resolve;
+                document.body.appendChild(s);
+            }, 100);
+        });
+    }
+
+    async function loadAllScripts() {
+        await loadScript("{{asset('/backend/assets/js/defaultmenu.min.js')}}");
+        await loadScript("{{asset('/backend/assets/libs/node-waves/waves.min.js')}}");
+        await loadScript("{{asset('/backend/assets/js/sticky.js')}}");
+        await loadScript("{{asset('/backend/assets/libs/simplebar/simplebar.min.js')}}");
+        await loadScript("{{asset('/backend/assets/js/simplebar.js')}}");
+        await loadScript("{{asset('/backend/assets/libs/%40tarekraafat/autocomplete.js/autoComplete.min.js')}}");
+        await loadScript("{{asset('/backend/assets/libs/%40simonwep/pickr/pickr.es5.min.js')}}");
+        await loadScript("{{asset('/backend/assets/libs/flatpickr/flatpickr.min.js')}}");
+        await loadScript("{{asset('/backend/assets/libs/apexcharts/apexcharts.min.js')}}");
+        await loadScript("{{asset('/backend/assets/js/sales-dashboard.js')}}");
+        await loadScript("{{asset('/backend/assets/js/custom.js')}}");
+        await loadScript("{{asset('/backend/assets/js/custom-switcher.min.js')}}");
+    }
+
+    loadAllScripts();
+</script>
+{{-- 
+
+<!-- Defaultmenu JS -->
+<script src="{{asset('/backend/assets/js/defaultmenu.min.js')}}"></script>
+
+<!-- Node Waves JS-->
+<script src="{{asset('/backend/assets/libs/node-waves/waves.min.js')}}"></script>
+
+<!-- Sticky JS -->
+<script src="{{asset('/backend/assets/js/sticky.js')}}"></script>
+
+<!-- Simplebar JS -->
+<script src="{{asset('/backend/assets/libs/simplebar/simplebar.min.js')}}"></script>
+<script src="{{asset('/backend/assets/js/simplebar.js')}}"></script>
+
+<!-- Auto Complete JS -->
+<script src="{{asset('/backend/assets/libs/@tarekraafat/autocomplete.js/autoComplete.min.js')}}"></script>
+
+<!-- Color Picker JS -->
+<script src="{{asset('/backend/assets/libs/@simonwep/pickr/pickr.es5.min.js')}}"></script>
+
+<!-- Date & Time Picker JS -->
+<script src="{{asset('/backend/assets/libs/flatpickr/flatpickr.min.js')}}"></script>
+
+
+    <!-- Apex Charts JS -->
+    <script src="{{asset('/backend/assets/libs/apexcharts/apexcharts.min.js')}}"></script>
+
+    <!-- Sales Dashboard --> 
+    <script src="{{asset('/backend/assets/js/sales-dashboard.js')}}"></script>
+
+    <!-- Custom JS -->
+    <script src="{{asset('/backend/assets/js/custom.js')}}"></script>
+
+<!-- Custom-Switcher JS -->
+<script src="{{asset('/backend/assets/js/custom-switcher.min.js')}}"></script> --}}
     </body>
 
 </html>

@@ -23,6 +23,7 @@ Route::get('/logout',[AuthenticatedSessionController::class,'destroy']);
 Route::get('/app', fn() => redirect('/app/dashboard'));
 
 Route::get('/{path?}',[FrontendController::class, 'index']);
-Route::get('/app/{module?}/{feature?}/{action?}/{id?}', [BackendController::class, 'index'])->name('backend.dashboard')->middleware(['auth', 'verified']);
+// ->middleware(['auth', 'verified'])
+Route::get('/app/{module?}/{feature?}/{action?}/{id?}', [BackendController::class, 'index'])->name('backend.dashboard');
 
 

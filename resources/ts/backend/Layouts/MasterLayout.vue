@@ -16,8 +16,8 @@ provide('toast', toast);
     <!-- END SIDEBAR -->
     <!-- MAIN-CONTENT -->
     <!-- Start::app-content -->
-    <div class="main-content app-content">
-        <div class="container-fluid">
+       <div class="main-content app-content">
+            <div class="container-fluid page-container main-body-container">
 
             <router-view v-slot="{ Component }">
                 <Transition name="slide-fade">
@@ -26,7 +26,7 @@ provide('toast', toast);
                   <!-- Start::row-1 -->
             </router-view>
             <FlashMessage ref="toast"/>
-            <!-- <notifications position="top right" /> -->
+           
         </div>
     </div>
     <!-- End::app-content -->
@@ -34,6 +34,21 @@ provide('toast', toast);
     <!-- FOOTER -->
     <Footer />
     <!-- END FOOTER -->
+      <div class="modal fade" id="header-responsive-search" tabindex="-1" aria-labelledby="header-responsive-search" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="input-group">
+                    <input type="text" class="form-control border-end-0" placeholder="Search Anything ..."
+                        aria-label="Search Anything ..." aria-describedby="button-addon2">
+                    <button class="btn btn-primary" type="button"
+                        id="button-addon2"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </div>
 </template>
 
