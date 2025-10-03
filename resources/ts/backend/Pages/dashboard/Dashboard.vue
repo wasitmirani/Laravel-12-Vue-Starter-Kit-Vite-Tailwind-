@@ -158,7 +158,7 @@
                                 <div class="card custom-card shadow-none card-bg-primary overflow-hidden dashboard-banner-card">
                                     <div class="card-body">
                                         <div class="dashboard-banner-card-background">
-                                            <img src="../assets/images/media/backgrounds/8.png" alt="">
+                                            <img :src="`/backend/assets/images/media/backgrounds/8.png`" alt="">
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between gap-3">
                                             <div>
@@ -207,7 +207,7 @@
                                         <div class="d-flex align-items-center gap-3">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-lg bg-light border border-dashed p-1">
-                                                    <img src="../assets/images/ecommerce/png/11.png" alt="">
+                                                    <img :src="`/backend/assets/images/ecommerce/png/11.png`" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -228,7 +228,7 @@
                                         <div class="d-flex align-items-center gap-3">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-lg bg-light border border-dashed p-1">
-                                                    <img src="../assets/images/ecommerce/png/12.png" alt="">
+                                                    <img :src="`/backend/assets/images/ecommerce/png/12.png`" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -249,7 +249,7 @@
                                         <div class="d-flex align-items-center gap-3">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-lg bg-light border border-dashed p-1">
-                                                    <img src="../assets/images/ecommerce/png/14.png" alt="">
+                                                    <img :src="`/backend/assets/images/ecommerce/png/14.png`" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -270,7 +270,7 @@
                                         <div class="d-flex align-items-center gap-3">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-lg bg-light border border-dashed p-1">
-                                                    <img src="../assets/images/ecommerce/png/16.png" alt="">
+                                                    <img :src="`/backend/assets/images/ecommerce/png/16.png`" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -291,7 +291,7 @@
                                         <div class="d-flex align-items-center gap-3">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-lg bg-light border border-dashed p-1">
-                                                    <img src="../assets/images/ecommerce/png/13.png" alt="">
+                                                    <img :src="`/backend/assets/images/ecommerce/png/13.png`" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -503,7 +503,7 @@
                                         <div class="d-flex align-items-center gap-3 flex-wrap">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-md bg-light">
-                                                    <img src="../assets/images/company-logos/1.png" alt="">
+                                                    <img :src="`/backend/assets/images/company-logos/1.png`" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -526,7 +526,7 @@
                                         <div class="d-flex align-items-center gap-3 flex-wrap">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-md bg-light">
-                                                    <img src="../assets/images/company-logos/2.png" alt="">
+                                                    <img :src="`/backend/assets/images/company-logos/2.png`" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -549,7 +549,7 @@
                                         <div class="d-flex align-items-center gap-3 flex-wrap">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-md bg-light">
-                                                    <img src="../assets/images/company-logos/3.png" alt="">
+                                                    <img :src="`/backend/assets/images/company-logos/3.png`" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -572,7 +572,7 @@
                                         <div class="d-flex align-items-center gap-3 flex-wrap">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-md bg-light">
-                                                    <img src="../assets/images/company-logos/4.png" alt="">
+                                                    <img :src="`/backend/assets/images/company-logos/4.png`" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -595,7 +595,7 @@
                                         <div class="d-flex align-items-center gap-3 flex-wrap">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-md bg-light">
-                                                    <img src="../assets/images/company-logos/5.png" alt="">
+                                                    <img :src="`/backend/assets/images/company-logos/5.png`" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -618,7 +618,7 @@
                                         <div class="d-flex align-items-center gap-3 flex-wrap">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-md bg-light">
-                                                    <img src="../assets/images/company-logos/6.png" alt="">
+                                                    <img :src="`/backend/assets/images/company-logos/6.png`" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -711,13 +711,13 @@
                                                 <td>
                                                     <div class="avatar-list-stacked">
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/3.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/3.jpg`" alt="img">
                                                         </span>
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/4.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/4.jpg`" alt="img">
                                                         </span>
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/5.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/5.jpg`" alt="img">
                                                         </span>
                                                     </div>
                                                 </td>
@@ -765,10 +765,10 @@
                                                 <td>
                                                     <div class="avatar-list-stacked">
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/1.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/1.jpg`" alt="img">
                                                         </span>
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/2.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/2.jpg`" alt="img">
                                                         </span>
                                                     </div>
                                                 </td>
@@ -818,10 +818,10 @@
                                                 <td>
                                                     <div class="avatar-list-stacked">
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/5.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/5.jpg`" alt="img">
                                                         </span>
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/6.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/6.jpg`" alt="img">
                                                         </span>
                                                     </div>
                                                 </td>
@@ -871,7 +871,7 @@
                                                 <td>
                                                     <div class="avatar-list-stacked">
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/3.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/3.jpg`" alt="img">
                                                         </span>
                                                     </div>
                                                 </td>
@@ -917,10 +917,10 @@
                                                 <td class="border-bottom-0">
                                                     <div class="avatar-list-stacked">
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/4.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/4.jpg`" alt="img">
                                                         </span>
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/1.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/1.jpg`" alt="img">
                                                         </span>
                                                     </div>
                                                 </td>
@@ -1028,10 +1028,10 @@
                                                 <td>
                                                     <div class="avatar-list-stacked text-end">
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/1.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/1.jpg`" alt="img">
                                                         </span>
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/2.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/2.jpg`" alt="img">
                                                         </span>
                                                         <a class="avatar bg-primary avatar-rounded avatar-sm text-fixed-white" href="javascript:void(0);">
                                                             +2
@@ -1059,13 +1059,13 @@
                                                 <td>
                                                     <div class="avatar-list-stacked text-end">
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/3.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/3.jpg`" alt="img">
                                                         </span>
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/4.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/4.jpg`" alt="img">
                                                         </span>
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/5.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/5.jpg`" alt="img">
                                                         </span>
                                                     </div>
                                                 </td>
@@ -1090,10 +1090,10 @@
                                                 <td>
                                                     <div class="avatar-list-stacked text-end">
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/6.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/6.jpg`" alt="img">
                                                         </span>
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/2.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/2.jpg`" alt="img">
                                                         </span>
                                                     </div>
                                                 </td>
@@ -1118,7 +1118,7 @@
                                                 <td>
                                                     <div class="avatar-list-stacked text-end">
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/5.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/5.jpg`" alt="img">
                                                         </span>
                                                     </div>
                                                 </td>
@@ -1143,10 +1143,10 @@
                                                 <td>
                                                     <div class="avatar-list-stacked text-end">
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/1.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/1.jpg`" alt="img">
                                                         </span>
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/4.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/4.jpg`" alt="img">
                                                         </span>
                                                         <a class="avatar bg-primary avatar-rounded avatar-sm text-fixed-white" href="javascript:void(0);">
                                                             +3
@@ -1174,10 +1174,10 @@
                                                 <td class="border-bottom-0">
                                                     <div class="avatar-list-stacked text-end">
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/6.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/6.jpg`" alt="img">
                                                         </span>
                                                         <span class="avatar avatar-rounded avatar-sm bg-light">
-                                                            <img src="../assets/images/ecommerce/jpg/2.jpg" alt="img">
+                                                            <img :src="`/backend/assets/images/ecommerce/jpg/2.jpg`" alt="img">
                                                         </span>
                                                     </div>
                                                 </td>

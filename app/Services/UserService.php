@@ -43,4 +43,6 @@ class UserService
     public function findByUUIDOrEmail($val){
         return $this->userRepository->findByUUIDOrEmail($val);
     }
+
+    
 }

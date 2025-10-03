@@ -60,9 +60,9 @@ const columns = [
 ];
 
 const actions = [
-    { label: "View", icon: "fe fe-eye", action: "view", class: "primary", },
-    { label: "Edit", icon: "fe fe-edit", action: "edit", class: "success" },
-    { label: "Delete", icon: "fe fe-trash", action: "delete", class: "danger" },
+    { label: "View", icon: "ri-eye-line", action: "view", class: "warning", },
+    { label: "Edit", icon: "ri-pencil-line", action: "edit", class: "info" },
+    { label: "Delete", icon: "ri-delete-bin-line", action: "delete", class: "danger" },
 ];
 
 function handleAction({ action, row }: { action: string; row: any }) {
@@ -96,7 +96,7 @@ function handleAction({ action, row }: { action: string; row: any }) {
                 <div class="d-flex align-items-center gap-3">
                     <div class="lh-1">
                         <span class="avatar avatar-md me-2 online avatar-rounded shadow">
-                            <img :src="`/backend/assets/images/users/default.png`" alt="">
+                            <img :src="`/backend/assets/images/faces/9.jpg`" alt="">
                         </span>
                     </div>
                     <div>

@@ -98,7 +98,12 @@ const userStore = (data: any) => {
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <label class="form-label">Contact Number</label>
-                                            <vue-tel-input :value="user.phone" @input="onInput"></vue-tel-input>
+                                            <vue-tel-input
+                                                :value="user.phone"
+                                                @input="onInput"
+                                                :enabled-country-code="true"
+                                                :searchable="true"
+                                            ></vue-tel-input>
 
                                             <div  v-if="errors" class="invalid-feedback">
                                                     <validate-input :errors="errors?.errors" value="phone" />

@@ -106,7 +106,7 @@ const paginationRange =  Helpers.useDynamicComputed(() => {
                     <td v-if="actions.length > 0">
                         <div class="btn-list">
                             <a v-for="action in actions" :key="action.label" href="javascript:void(0)"
-                                :class="`btn btn-sm btn-${action.class || 'primary'}-light btn-icon btn-wave waves-effect waves-light`"
+                                :class="`btn btn-sm btn-${action.class || 'primary'}-light btn-icon`"
                                 @click="$emit('action', { action: action.action, row })" data-bs-toggle="tooltip"
                                 data-bs-placement="top" :title="action.label">
                                 <i :class="action.icon"></i>

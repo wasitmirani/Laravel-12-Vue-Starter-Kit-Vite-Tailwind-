@@ -52,40 +52,59 @@ Helpers.useDynamicOnMounted(() => {
         <div class="row">
             <div class="col-xl-12">
 
-                <div class="card custom-card overflow-hidden">
+                <div class="card custom-card">
 
-                    <div class="card-header justify-content-between">
-                        <div class="card-title">
-                            All Users List
+                    <div class="card-header d-flex align-items-center justify-content-between flex-wrap gap-3">
+                        <div class="card-title d-flex align-items-center gap-2 flex-wrap">
+                            <span>All Users List</span>
+                            <!-- Search -->
+                            <SearchInput
+                                :label="'Search Users'"
+                                :apiPath="`/user`"
+                                @loading="loadingStart"
+                                @filterData="filterData"
+                                @reload="getUsers"
+                                class="ms-3"
+                            />
                         </div>
-                        <div class="d-flex flex-wrap gap-2">
-                            <div>
-                                <!-- Search -->
-                                <SearchInput :label="'Search Users'" :apiPath="`/user`" @loading="loadingStart"
-                                    @filterData="filterData" @reload="getUsers" />
-                            </div>
+                        <div class="d-flex align-items-center flex-wrap gap-2">
+                            <router-link
+                                :to="{ name: 'create-user' }"
+                                class="btn btn-primary d-flex align-items-center"
+                            >
+                                <i class="ri-add-line me-1 fw-medium align-middle"></i>
+                                <span>Add User</span>
+                            </router-link>
+                            <button class="btn btn-success d-flex align-items-center">
+                                <i class="ri-file-download-line me-1"></i>
+                                <span>Export As CSV</span>
+                            </button>
                             <div class="dropdown">
-                                <a href="javascript:void(0);"
-                                    class="btn btn-primary btn-sm btn-wave waves-effect waves-light"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Sort By<i class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                <a
+                                    href="javascript:void(0);"
+                                    class="btn btn-light btn-wave waves-effect waves-light d-flex align-items-center"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <span>Sort By</span>
+                                    <i class="ri-arrow-down-s-line align-middle ms-1"></i>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li v-for="item in sortableFilterOptions"><a class="dropdown-item"
-                                            href="javascript:void(0);">
-
+                                    <li v-for="item in sortableFilterOptions" :key="item.value">
+                                        <a class="dropdown-item" href="javascript:void(0);">
                                             {{ item.label }}
-                                        </a></li>
-
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
-                            <router-link :to="{ name: 'create-user' }"
-                                class="btn btn-success btn-wave btn-sm waves-effect waves-light">
-                                <i class="ri-add-line me-1 align-middle"></i> Add User
-                            </router-link>
-                            <OffCanvas id="hs-overlay-right" title="Filters" buttonClass="btn btn-primary btn-wave btn-sm waves-effect waves-light" buttonLabel="Filter">
+                            <OffCanvas
+                                id="hs-overlay-right"
+                                title="Filters"
+                                buttonClass="btn btn-primary btn-wave waves-effect waves-light d-flex align-items-center"
+                                buttonLabel="Filter"
+                            >
                                 <template #button-icon>
-                                    <i class="ri-filter-3-line align-middle me-1 leading-none"></i>
+                                    <i class="ri-filter-3-line align-middle me-1"></i>
                                 </template>
                                 <template #body>
                                     <ul class="ti-list-group ti-list-group-flush mb-0">

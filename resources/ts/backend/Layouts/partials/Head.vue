@@ -22,10 +22,10 @@ function logOut(event:any) {
             <div class="header-element">
                 <div class="horizontal-logo">
                     <a href="index.html" class="header-logo">
-                        <img src="../assets/images/brand-logos/desktop-logo.png" alt="logo" class="desktop-logo">
-                        <img src="../assets/images/brand-logos/toggle-logo.png" alt="logo" class="toggle-logo">
-                        <img src="../assets/images/brand-logos/desktop-dark.png" alt="logo" class="desktop-dark">
-                        <img src="../assets/images/brand-logos/toggle-dark.png" alt="logo" class="toggle-dark">
+                        <img :src="`/backend/assets/images/brand-logos/desktop-logo.png`" alt="logo" class="desktop-logo">
+                        <img :src="`/backend/assets/images/brand-logos/toggle-logo.png`" alt="logo" class="toggle-logo">
+                        <img :src="`/backend/assets/images/brand-logos/desktop-dark.png`" alt="logo" class="desktop-dark">
+                        <img :src="`/backend/assets/images/brand-logos/toggle-dark.png`" alt="logo" class="toggle-dark">
                     </a>
                 </div>
             </div>
@@ -73,7 +73,7 @@ function logOut(event:any) {
                     <li>
                         <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                             <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                <img src="../assets/images/flags/us_flag.jpg" alt="img">
+                                <img :src="`/backend/assets/images/flags/us_flag.jpg`" alt="img">
                             </span>
                             English
                         </a>
@@ -81,7 +81,7 @@ function logOut(event:any) {
                     <li>
                         <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                             <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                <img src="../assets/images/flags/spain_flag.jpg" alt="img" >
+                                <img :src="`/backend/assets/images/flags/spain_flag.jpg`" alt="img" >
                             </span>
                             español
                         </a>
@@ -89,7 +89,7 @@ function logOut(event:any) {
                     <li>
                         <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                             <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                <img src="../assets/images/flags/french_flag.jpg" alt="img" >
+                                <img :src="`/backend/assets/images/flags/french_flag.jpg`" alt="img" >
                             </span>
                             français
                         </a>
@@ -97,7 +97,7 @@ function logOut(event:any) {
                     <li>
                         <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                             <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                <img src="../assets/images/flags/uae_flag.jpg" alt="img" >
+                                <img :src="`/backend/assets/images/flags/uae_flag.jpg`" alt="img" >
                             </span>
                             عربي
                         </a>
@@ -105,7 +105,7 @@ function logOut(event:any) {
                     <li>
                         <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                             <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                <img src="../assets/images/flags/germany_flag.jpg" alt="img" >
+                                <img :src="`/backend/assets/images/flags/germany_flag.jpg`" alt="img" >
                             </span>
                             Deutsch
                         </a>
@@ -113,7 +113,7 @@ function logOut(event:any) {
                     <li>
                         <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                             <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                <img src="../assets/images/flags/china_flag.jpg" alt="img" >
+                                <img :src="`/backend/assets/images/flags/china_flag.jpg`" alt="img" >
                             </span>
                             中国人
                         </a>
@@ -121,7 +121,7 @@ function logOut(event:any) {
                     <li>
                         <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                             <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                <img src="../assets/images/flags/italy_flag.jpg" alt="img" >
+                                <img :src="`/backend/assets/images/flags/italy_flag.jpg`" alt="img" >
                             </span>
                             Italiano
                         </a>
@@ -129,7 +129,7 @@ function logOut(event:any) {
                     <li>
                         <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                             <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                <img src="../assets/images/flags/russia_flag.jpg" alt="img" >
+                                <img :src="`/backend/assets/images/flags/russia_flag.jpg`" alt="img" >
                             </span>
                             Русский
                         </a>
@@ -179,7 +179,7 @@ function logOut(event:any) {
                             <div class="d-flex align-items-start cart-dropdown-item gap-3">
                                 <div class="lh-1">
                                     <span class="avatar avatar-xl bg-gray-300">
-                                        <img src="../assets/images/ecommerce/png/13.png" alt="img">
+                                        <img :src="`/backend/assets/images/ecommerce/png/13.png`" alt="img">
                                     </span>
                                 </div>
                                 <div class="flex-fill w-75">
@@ -220,7 +220,7 @@ function logOut(event:any) {
                             <div class="d-flex align-items-start cart-dropdown-item gap-3">
                                 <div class="lh-1">
                                     <span class="avatar avatar-xl bg-gray-300">
-                                        <img src="../assets/images/ecommerce/png/15.png" alt="img">
+                                        <img :src="`/backend/assets/images/ecommerce/png/15.png`" alt="img">
                                     </span>
                                 </div>
                                 <div class="flex-fill w-75">
@@ -261,7 +261,7 @@ function logOut(event:any) {
                             <div class="d-flex align-items-start cart-dropdown-item gap-3">
                                 <div class="lh-1">
                                     <span class="avatar avatar-xl bg-gray-300">
-                                        <img src="../assets/images/ecommerce/png/19.png" alt="img">
+                                        <img :src="`/backend/assets/images/ecommerce/png/19.png`" alt="img">
                                     </span>
                                 </div>
                                 <div class="flex-fill w-75">
@@ -302,7 +302,7 @@ function logOut(event:any) {
                             <div class="d-flex align-items-start cart-dropdown-item gap-3">
                                 <div class="lh-1">
                                     <span class="avatar avatar-xl bg-gray-300">
-                                        <img src="../assets/images/ecommerce/png/6.png" alt="img">
+                                        <img :src="`/backend/assets/images/ecommerce/png/6.png`" alt="img">
                                     </span>
                                 </div>
                                 <div class="flex-fill w-75">
@@ -343,7 +343,7 @@ function logOut(event:any) {
                             <div class="d-flex align-items-start cart-dropdown-item gap-3">
                                 <div class="lh-1">
                                     <span class="avatar avatar-xl bg-gray-300">
-                                        <img src="../assets/images/ecommerce/png/11.png" alt="img">
+                                        <img :src="`/backend/assets/images/ecommerce/png/11.png`" alt="img">
                                     </span>
                                 </div>
                                 <div class="flex-fill w-75">
@@ -423,7 +423,7 @@ function logOut(event:any) {
                             <div class="d-flex align-items-start gap-3">
                                  <div class="lh-1">
                                      <span class="avatar avatar-sm avatar-rounded bg-primary-transparent">
-                                        <img src="../assets/images/faces/1.jpg" alt="">
+                                        <img :src="`/backend/assets/images/faces/1.jpg`" alt="">
                                      </span>
                                  </div>
                                  <div class="flex-fill">
@@ -459,7 +459,7 @@ function logOut(event:any) {
                             <div class="d-flex align-items-start gap-3">
                                  <div class="lh-1">
                                      <span class="avatar avatar-sm avatar-rounded bg-primary-transparent fs-5">
-                                        <img src="../assets/images/faces/12.jpg" alt="">
+                                        <img :src="`/backend/assets/images/faces/12.jpg`" alt="">
                                      </span>
                                  </div>
                                  <div class="flex-fill">
@@ -538,7 +538,7 @@ function logOut(event:any) {
                 <!-- Start::header-link|dropdown-toggle -->
                 <a href="javascript:void(0);" class="header-link dropdown-toggle" id="mainHeaderProfile" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                     <div>
-                        <img src="../assets/images/faces/12.jpg" alt="img" class="header-link-icon">
+                        <img :src="`/backend/assets/images/faces/12.jpg`" alt="img" class="header-link-icon">
                     </div>
                 </a>
                 <!-- End::header-link|dropdown-toggle -->
@@ -554,7 +554,7 @@ function logOut(event:any) {
                         <div class="d-flex align-items-start gap-2">
                             <div class="lh-1">
                                 <span class="avatar avatar-sm bg-primary-transparent avatar-rounded">
-                                    <img src="../assets/images/faces/12.jpg" alt="">
+                                    <img :src="`/backend/assets/images/faces/12.jpg`" alt="">
                                 </span>
                             </div>
                             <div>

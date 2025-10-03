@@ -27,7 +27,10 @@ const getUser = ()=>{
 }
 
  Helpers.useDynamicOnMounted(() => {
-    getUser();
+    if(Helpers.route().params.uuid){
+        getUser();
+    }
+
 
 });
 </script>

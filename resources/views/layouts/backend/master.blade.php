@@ -7,10 +7,36 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>  - {{ config('app.name') }} </title>
-    <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
-    <meta name="Author" content="Spruko Technologies Private Limited">
-	<meta name="keywords" content="admin dashboard html,admin html template,admin panel bootstrap template,admin panel html template,admin template html,bootstrap admin panel,bootstrap html template,bootstrap template,bootstrap with html,dashboard html template,dashboards ui,html admin dashboard,html bootstrap,html dashboard template,html template">
-    
+    <meta name="Description" content="{{ config('app.name') }}">
+    <meta name="Author" content="Wasit Mirani  https://github.com/wasitmirani">
+	<meta name="keywords" content="{{ config('app.name') }}">
+    <!-- Google Fonts: Inter, Roboto, Nunito, and Poppins for modern admin look -->
+    <!-- Google Fonts: Inter, Roboto, Nunito, Poppins, and Open Sans for modern admin look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Nunito:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        html, body {
+            font-family: 'Inter', 'Poppins', 'Roboto', 'Nunito', 'Open Sans', Arial, sans-serif;
+            font-size: 15px;
+            letter-spacing: 0.01em;
+            /* background-color: #f8f9fb;
+            color: #222; */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', 'Inter', 'Roboto', 'Nunito', 'Open Sans', Arial, sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+        .btn, .form-control, .nav-link, .switcher-style-head {
+            font-family: 'Inter', 'Roboto', 'Nunito', 'Open Sans', Arial, sans-serif;
+            font-weight: 500;
+        }
+        .form-control, .btn {
+            font-size: 15px;
+        }
+    </style>
     <!-- Favicon -->
     <link rel="icon" href="{{asset('/backend/assets/images/brand-logos/favicon.ico')}}" type="image/x-icon">
     
