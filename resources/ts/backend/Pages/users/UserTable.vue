@@ -60,8 +60,8 @@ const columns = [
 ];
 
 const actions = [
-    { label: "View", icon: "ri-eye-line", action: "view", class: "warning", },
-    { label: "Edit", icon: "ri-pencil-line", action: "edit", class: "info" },
+    { label: "View", icon: "ri-eye-line", action: "view", class: "info", },
+    { label: "Edit", icon: "ri-pencil-line", action: "edit", class: "primary" },
     { label: "Delete", icon: "ri-delete-bin-line", action: "delete", class: "danger" },
 ];
 

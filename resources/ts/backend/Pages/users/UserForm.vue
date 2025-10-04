@@ -65,6 +65,32 @@ const userStore = (data: any) => {
     }, 1000);
 };
 
+
+
+const showPassword = Helpers.useDynamicRef(false);
+
+const togglePassword = () => {
+    showPassword.value = !showPassword.value;
+};
+
+const generatePassword = () => {
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+    let password = '';
+    for (let i = 0; i < 12; i++) {
+        password += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    user.password = password;
+    user.password_confirmation = password;
+};
+
+const copyPassword = async () => {
+    try {
+        await navigator.clipboard.writeText(user.password);
+        toast.value.showToast(200, 'Password Copied', 'Password has been copied to clipboard.');
+    } catch (e) {
+        toast.value.showToast(500, 'Copy Failed', 'Could not copy password.');
+    }
+};
 </script>
 <template>
     <div class="row gap-x-6">
@@ -110,13 +136,41 @@ const userStore = (data: any) => {
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-3">
-                                            <FormInput v-model="user.password" label="Password" name="password"
-                                                placeholder="********" type="password" :errors="errors" autofocus />
+                                            <label class="form-label">Password</label>
+                                            <div class="input-group">
+                                                <input
+                                                    v-model="user.password"
+                                                    name="password"
+                                                    placeholder="********"
+                                                    :type="showPassword ? 'text' : 'password'"
+                                                    class="form-control"
+                                                    :class="{ 'is-invalid': errors?.errors?.password }"
+                                                    autofocus
+                                                >
+                                                <button class="btn btn-outline-primary" type="button" @click="togglePassword" tabindex="-1">
+                                                    <i :class="showPassword ? 'ri-eye-off-line' : 'ri-eye-line'"></i>
+                                                </button>
+                                                <button class="btn btn-outline-primary" type="button" @click="generatePassword" tabindex="-1">
+                                                    <i class="ri-key-line"></i>
+                                                </button>
+                                                <button class="btn btn-outline-primary" type="button" @click="copyPassword" tabindex="-1">
+                                                    <i class="ri-file-copy-line"></i>
+                                                </button>
+                                            </div>
+                                            <validate-input class="text-danger" v-if="errors" :errors="errors?.errors" value="password" />
                                         </div>
                                         <div class="col-md-6 mb-3">
-                                            <FormInput v-model="user.password_confirmation" label="Confirm Password"
-                                                name="password_confirmation" placeholder="******" type="password"
-                                                :errors="errors" autofocus />
+                                            <label class="form-label">Confirm Password</label>
+                                            <input
+                                                v-model="user.password_confirmation"
+                                                name="password_confirmation"
+                                                class="form-control"
+                                                placeholder="******"
+                                                :type="showPassword ? 'text' : 'password'"
+                                                :class="{ 'is-invalid': errors?.errors?.password_confirmation }"
+                                                autofocus
+                                            >
+                                            <validate-input class="text-danger" v-if="errors" :errors="errors?.errors" value="password_confirmation" />
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <div class="row">

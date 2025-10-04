@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="transparent" data-width="fullwidth" data-menu-styles="transparent" data-page-style="flat" data-toggled="close"  data-vertical-style="default" data-toggled="double-menu-open">
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="transparent" data-width="fullwidth" data-menu-styles="transparent" data-page-style="regular" data-toggled="close"  data-vertical-style="default" data-toggled="double-menu-open">
 <head>
 
     <!-- Meta Data -->
@@ -219,7 +219,7 @@
                                     Default Menu
                                 </label>
                                 <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
-                                    id="switcher-default-menu">
+                                    id="switcher-default-menu" checked>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -264,7 +264,7 @@
                                     Double Menu
                                 </label>
                                 <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
-                                    id="switcher-double-menu" checked>
+                                    id="switcher-double-menu" >
                             </div>
                         </div>
                     </div>
@@ -278,7 +278,7 @@
                                     Regular
                                 </label>
                                 <input class="form-check-input" type="radio" name="page-styles" id="switcher-regular"
-                                    >
+                                    checked>
                             </div>
                         </div>
                         <div class="col-xl-3 col-6">
@@ -302,7 +302,7 @@
                                 <label class="form-check-label" for="switcher-flat">
                                     Flat 
                                 </label>
-                                <input class="form-check-input" type="radio" name="page-styles" id="switcher-flat" checked>
+                                <input class="form-check-input" type="radio" name="page-styles" id="switcher-flat" >
                             </div>
                         </div>
                     </div>
